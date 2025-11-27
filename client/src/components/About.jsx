@@ -7,10 +7,10 @@ export default function About() {
         <h2 className="text-4xl md:text-5xl font-bold mb-12 text-center">About Me</h2>
         <div className="bg-slate-800/50 backdrop-blur-sm rounded-2xl p-8 md:p-12 border border-purple-500/20">
           <p className="text-lg text-gray-300 mb-6">
-            I'm a passionate full-stack developer specializing in the MERN stack. With a strong foundation in modern web technologies, I create scalable, efficient, and user-friendly applications.
+            I&apos;m a passionate full-stack developer specializing in the MERN stack. With a strong foundation in modern web technologies, I create scalable, efficient, and user-friendly applications.
           </p>
           <p className="text-lg text-gray-300 mb-6">
-            My expertise lies in building complete solutions from database design to intuitive front-end interfaces. I'm committed to writing clean, maintainable code and staying current with the latest industry trends.
+            My expertise lies in building complete solutions from database design to intuitive front-end interfaces. I&apos;m committed to writing clean, maintainable code and staying current with the latest industry trends.
           </p>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mt-8">
             {['5+ Projects', '2+ Years Exp', 'Full-Stack', 'API Design'].map((item, i) => (

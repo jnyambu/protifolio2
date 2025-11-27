@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Code, Database, Server } from 'lucide-react';
+// Removed unused lucide-react icons to address ESLint no-unused-vars warnings
 import { getSkills } from '../utils/api';
 
 export default function Skills() {
@@ -41,7 +41,7 @@ export default function Skills() {
       <div className="max-w-6xl w-full">
         <h2 className="text-4xl md:text-5xl font-bold mb-12 text-center">Technical Skills</h2>
         <div className="grid md:grid-cols-2 gap-6">
-          {skills.map((skill) => (
+          {Array.isArray(skills) && skills.map((skill) => (
             <div key={skill._id} className="bg-slate-800/50 backdrop-blur-sm rounded-xl p-6 border border-purple-500/20 hover:border-purple-500/50 transition-all hover:shadow-lg hover:shadow-purple-500/20 group">
               <div className="flex items-start gap-4">
                 <div className={`${skill.color} p-3 rounded-lg group-hover:scale-110 transition-transform`}>
